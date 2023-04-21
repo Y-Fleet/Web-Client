@@ -1,0 +1,24 @@
+.box {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../Cloudy\(3\).svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    line-height: 1.5;
+  }
+

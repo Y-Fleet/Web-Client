@@ -1,0 +1,122 @@
+/* WarehouseDashboard.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .heading {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .address {
+    margin-bottom: 20px;
+  }
+  
+  .inventory {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .inventory li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .inventory li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .inventory li p {
+    margin-bottom: 10px;
+  }
+  
+  .add-stock-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .add-item-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 3px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .cancel-button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0069d9;
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content button {
+    margin-top: 10px;
+  }
+  
+  .modal-overlay {
+    z-index: 1;
+  }
+  

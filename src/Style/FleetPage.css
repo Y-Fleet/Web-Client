@@ -1,0 +1,67 @@
+FleetPage.css
+
+.fleet-page {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .vehicle-list {
+    width: 30%;
+  }
+  
+  .vehicle-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vehicle-card:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .vehicle-card.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .vehicle-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .vehicle-info {
+    width: 60%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vehicle-info img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .vehicle-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .vehicle-info p {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .vehicle-info p.status {
+    font-weight: bold;
+    color: #007bff;
+  }
+  

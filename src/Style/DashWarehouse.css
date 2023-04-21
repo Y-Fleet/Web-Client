@@ -1,0 +1,131 @@
+body {
+    background-color: #f5f5f5;
+  }
+h2 {
+    color: #fcb532;
+}
+.warehouse-list {
+    font-family: Arial, sans-serif;
+  }
+  
+  .warehouse-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .warehouse-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  
+  .warehouse-card {
+    background-color: #ffe0b2;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .warehouse-card:hover {
+    background-color: #f1b157;
+  }
+  
+  .warehouse-card.selected {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  
+  .warehouse-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+  }
+  
+  .warehouse-card p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .warehouse-details {
+    width: 50%;
+    padding-left: 20px;
+  }
+  
+  .warehouse-details h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+  }
+  
+  .warehouse-details p {
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+  .create-warehouse-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+  }
+  
+  .create-warehouse-form {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    width: 500px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .create-warehouse-form h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .create-warehouse-form label {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .create-warehouse-form input {
+    margin-bottom: 1rem;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+  }
+  
+  .create-warehouse-form button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+  }  
+
+  .close-button {
+    background-color: #f44336;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
