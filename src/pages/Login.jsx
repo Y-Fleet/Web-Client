@@ -48,19 +48,22 @@ const handleSubmit = (event, setToken, navigate) => {
   };
   fetch('http://localhost:8080/login', options)
     .then((response) => {
-    console.log(response)
-    response.json()
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        return response.json();
     })
     .then((response) => {
-      if (response.message === "Welcome") {
         console.log(response);
-        document.cookie = `refreshToken=${response.refresh_token}; Secure; SameSite=Strict; Max-Age=${30 * 24 * 60 * 60}`;
-        setToken(response.token);
-      } else if (response.message === "Denied") {
-        window.alert('Verify your Information');
-      }
+        if (response.message === "Welcome") {
+            console.log(response);
+            document.cookie = `refreshToken=${response.refresh_token}; Secure; SameSite=Strict; Max-Age=${30 * 24 * 60 * 60}`;
+            setToken(response.token);
+        } else if (response.message === "Denied") {
+            window.alert('Verify your Information');
+        }
     })
     .catch((error) => {
-      console.log(error);
+        console.error('Error:', error);
     });
 };

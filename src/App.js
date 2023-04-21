@@ -4,6 +4,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import Panel from './pages/Panel'
 import PrivateRoute from './components/PrivateRoute'
+import Maps from './pages/Maps';
 
 import { TokenProvider, useToken } from './hooks/MemoryJwtToken';
 import { useRefreshToken } from './hooks/UseRefreshToken';
@@ -51,6 +52,7 @@ function AppRoutes() {
       <Route path="/Panel" element={<PrivateRoute />} >
         <Route index element={<FleetPage />} />
       </Route>
+      <Route path="/Maps" element={<Maps />} />
     </Routes>
   );
 }
